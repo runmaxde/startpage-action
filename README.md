@@ -5,7 +5,7 @@ A lightweight Startpage generator powered by YAML &amp; handlebars
 ## Action 🎬
 
 ``` yaml
-# .github/workflows/live.yml
+# .github/workflows/buil.yml
 
 on: [push]
 
