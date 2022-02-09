@@ -1,21 +1,18 @@
-name: "Hello World"
-description: "Greet someone"
+name: "StartPage Action"
+description: "Hello World"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
-    required: true
-    default: "World"
-outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-id }}
+  templateFile:
+    description: "path of template"
+    required: false
+    default: ""
+  inputFile:
+    description: "path of input.yml"
+    required: false
+    default: ""
+  outputPath:
+    description: "path where files should go"
+    required: false
+    default: ""
 runs:
-  using: "composite"
-  steps:
-    - run: echo Hello ${{ inputs.who-to-greet }}.
-      shell: bash
-    - id: random-number-generator
-      run: echo "::set-output name=random-id::$(echo $RANDOM)"
-      shell: bash
-    - run: ${{ github.action_path }}/goodbye.sh
-      shell: bash
+  using: "node16"
+  main: "index.js"
