@@ -1,6 +1,14 @@
-# startpage-action
-A lightweight Startpage generator powered by YAML &amp; handlebars
-
+<div align="center">
+  <h1>Startpage Action 🏠</h1>
+  <h3><a href="https://github.com/features/actions">Github Action</a> to generate a Webpage from your Bookmarks powered by YAML &amp; Handlebars</h3>
+  <a href="https://www.raycast.com/search/Search%20Cargo%20Packages">
+    <img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" />
+  </a>
+  <a href="https://choosealicense.com/licenses/mit/">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" />
+  </a>
+  <br/><br/><br/>
+</div>
 
 ## Action 🎬
 
