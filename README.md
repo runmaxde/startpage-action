@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        uses: runmaxde/startpage-action
+        uses: runmaxde/startpage-action@v0.2
         with:
           templateFile: "./template/index.hbs"
           inputFile: "./input.yml"
